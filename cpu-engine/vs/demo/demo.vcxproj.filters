@@ -9,6 +9,12 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{6ee07c65-bcae-4629-9079-bb641f182bf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{ecfb1a22-82a6-4345-b808-88c907bca917}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Resource.h">
@@ -23,6 +29,15 @@
     <ClInclude Include="stdafx.h">
       <Filter>App</Filter>
     </ClInclude>
+    <ClInclude Include="Cell.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaCell.h" />
+    <ClInclude Include="Boat.h" />
+    <ClInclude Include="Grid.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="demo.cpp">
@@ -32,6 +47,21 @@
       <Filter>App</Filter>
     </ClCompile>
     <ClCompile Include="App.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="Cell.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaCell.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="Boat.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid.cpp">
       <Filter>App</Filter>
     </ClCompile>
   </ItemGroup>

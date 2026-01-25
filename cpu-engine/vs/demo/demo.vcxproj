@@ -78,14 +78,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Boat.h" />
+    <ClInclude Include="Cell.h" />
     <ClInclude Include="demo.h" />
     <ClInclude Include="App.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="Grid.h" />
+    <ClInclude Include="SeaCell.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Resource.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Boat.cpp" />
+    <ClCompile Include="Cell.cpp" />
     <ClCompile Include="demo.cpp" />
     <ClCompile Include="App.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="Grid.cpp" />
+    <ClCompile Include="SeaCell.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
