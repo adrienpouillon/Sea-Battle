@@ -342,7 +342,7 @@ void App::CollisionEntity()
 		{
 			Entity* entity2 = *it2;
 
-			if (*it1 == *it2)
+			if (entity1 == entity2)
 			{
 				//it is me
 				UpMe = true;
@@ -350,7 +350,7 @@ void App::CollisionEntity()
 			}
 			else if (UpMe == false)
 			{
-				if ((*it2)->GetIsCollider())
+				if (entity2->GetIsCollider())
 				{
 					//pass collider
 					continue;
@@ -364,16 +364,16 @@ void App::CollisionEntity()
 
 				switch (entity2->GetBoxColliding())
 				{
-				case _CUBE:   collided = CollisionRectRect(*it1, *it2); break;
-				case _SPHERE: collided = CollisionRectSphere(*it1, *it2); break;
+				case _CUBE:   collided = CollisionRectRect(entity1, entity2); break;
+				case _SPHERE: collided = CollisionRectSphere(entity1, entity2); break;
 				}
 
 				break;
 			case _SPHERE:
 				switch (entity2->GetBoxColliding())
 				{
-				case _CUBE:   collided = CollisionSphereRect(*it1, *it2); break;
-				case _SPHERE: collided = CollisionSphereSphere(*it1, *it2); break;
+				case _CUBE:   collided = CollisionSphereRect(entity1, entity2); break;
+				case _SPHERE: collided = CollisionSphereSphere(entity1, entity2); break;
 				}
 				break;
 			}
